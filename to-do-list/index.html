@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="todo-container">
+      <h2>My To-Do List</h2>
+
+      <!-- Input Form Area -->
+      <div class="input-section">
+        <textarea
+          id="task-input"
+          rows="5"
+          cols="50"
+          placeholder="Add a new task..."
+        ></textarea>
+        <button id="add-btn">Add Task</button>
+      </div>
+
+      <!-- Task List Area -->
+      <ul id="task-list">
+        <!-- JavaScript will dynamically render tasks here -->
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

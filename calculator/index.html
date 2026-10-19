@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- screen -->
+      <div class="display">
+        <div id="previous-operand" class="previous-operand"></div>
+        <div id="current-operand" class="current-operand">0</div>
+      </div>
+      <!-- keyboard -->
+      <div class="buttons">
+        <div class="btn span-two action-clear">AC</div>
+        <div class="btn action-delete">DEL</div>
+        <div class="btn operator">÷</div>
+
+        <div class="btn number">7</div>
+        <div class="btn number">8</div>
+        <div class="btn number">9</div>
+        <div class="btn operator">x</div>
+
+        <div class="btn number">4</div>
+        <div class="btn number">5</div>
+        <div class="btn number">6</div>
+        <div class="btn operator">-</div>
+
+        <div class="btn number">1</div>
+        <div class="btn number">2</div>
+        <div class="btn number">3</div>
+        <div class="btn operator">+</div>
+
+        <div class="btn number span-two">0</div>
+        <div class="btn number">.</div>
+        <div class="btn equals operator">=</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

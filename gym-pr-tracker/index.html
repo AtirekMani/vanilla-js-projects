@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Strength Progression Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="tracker-container">
+      <h2>Gym PR Tracker</h2>
+
+      <!-- Input Form -->
+      <div class="form-section">
+        <input
+          type="text"
+          id="exercise-input"
+          placeholder="Exercise (e.g., Bench Press)"
+        />
+        <input type="number" id="weight-input" placeholder="Weight (kg)" />
+        <input type="number" id="reps-input" placeholder="Reps" />
+        <button id="add-pr-btn">Log PR</button>
+      </div>
+      <br />
+      <hr />
+      <!-- Search / Filter Input -->
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search exercise (e.g., Bench Press)..."
+      /><br />
+
+      <!-- PR List Area -->
+      <ul id="pr-list">
+        <!-- JavaScript will render PR cards here -->
+      </ul>
+    </div>
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-hidden">
+      <div class="modal-content">
+        <h2 id="modal-title">Exercise Details</h2>
+        <p id="modal-date">Date: --</p>
+        <p id="modal-stats">Stats: --</p>
+        <p id="modal-1rm">Estimated 1RM: --</p>
+        <button id="modal-close-btn">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
